@@ -16,7 +16,7 @@ while(1) {//endless
         $currencyEUR = $latest->getByСurrencyName("EUR");
         $currencyRUB = $latest->getByСurrencyName("RUB");
         $file = fopen("currencies.txt","a");
-        $date = date('m/d/Y h:i:s a', time())."   USD=".$currencyUSD." EUR=".$currencyEUR." RUB".$currencyRUB."/n";
+        $date = date('m/d/Y h:i:s a', time())."   USD=".$currencyUSD." EUR=".$currencyEUR." RUB".$currencyRUB."\n";
         fwrite($file, $date."\n");
         fclose($file);
     }
