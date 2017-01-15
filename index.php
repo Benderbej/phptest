@@ -1,4 +1,7 @@
 <?php
+//here you can check
+//http://odeghda.ru/
+//http://odeghda.ru/page2.php
 echo "parsing!";
 $incomingJsonString = file_get_contents("http://api.fixer.io/latest");
 echo "<hr />parsing string: ".$incomingJsonString."<hr />";
